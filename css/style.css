@@ -2833,7 +2833,7 @@ fieldset:disabled a.btn {
 .btn-success:hover {
     color: #fff;
     background-color: #218838;
-    border-color: #1e7e34;
+    border-color: #ffc107;
 }
 
 .btn-success:focus,
@@ -2853,7 +2853,7 @@ fieldset:disabled a.btn {
 .btn-success:not(:disabled):not(.disabled).active,
 .show>.btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #1e7e34;
+    background-color: #ffc107;
     border-color: #1c7430;
 }
 
@@ -5605,7 +5605,7 @@ a.badge-secondary:focus {
 a.badge-success:hover,
 a.badge-success:focus {
     color: #fff;
-    background-color: #1e7e34;
+    background-color: #ffc107;
 }
 
 .badge-info {
@@ -7095,7 +7095,7 @@ a.bg-success:hover,
 a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-    background-color: #1e7e34 !important;
+    background-color: #ffc107 !important;
 }
 
 .bg-info {
