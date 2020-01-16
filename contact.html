@@ -64,13 +64,80 @@
     <div class="hero-wrap hero-bread" style="background-image: url('images/spices\ bg.jpg');">
     </div>
 
-    <section class="ftco-section contact-section bg-light">
+
+    <section class="ftco-section contact-section bg-color-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 order-md-last d-flex ">
+                <form action="mail.php" class="bg-white p-5 contact-form" method="POST">
+                    <div class="form-group">
+                        <h3 style="padding-bottom: 20px; text-align: center;">Send us your query</h3>
+                        <input type="text" class="form-control" placeholder="Your Name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Your mobile" name="contact" onkeypress="return isNumberKey(event)">
+
+                    </div>
+
+                    <SCRIPT language=Javascript>
+                        function isNumberKey(evt) {
+                            var charCode = (evt.which) ? evt.which : event.keyCode
+                            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                                return false;
+
+                            return true;
+                        }
+                    </SCRIPT>
+
+
+                    <div class="mb-4">
+                        <select name="category">
+
+                            <option value="" disabled selected>Select Product</option>
+                            <option value="Black Pepper">Black Pepper</option>
+                            <option value="Red Chilli Powder">Red Chilli Powder</option>
+                            <option value="Turmeric Powder">Turmeric Powder</option>
+                            <option value="Coriander Powder">Coriander Powder</option>
+                            <option value="Cumin Powder">Cumin Powder</option>
+                            <option value="Whole Chilli">Whole Chilli</option>
+                            <option value="Whole Turmeric">Whole Turmeric</option>
+                            <option value="Dry Ginger">Dry Ginger</option>
+                            <option value="Green Cardamom">Green Cardamom (Elaichi)</option>
+                            <option value="Cumin Seeds">Cumin Seeds</option>
+                            <option value="Indian Chickpeas">Indian Chickpeas</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group">
+                        <textarea cols="30" rows="7" class="form-control" placeholder="Message" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit_btn" value="Send Message" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="ftco-section contact-section bg-color-2">
         <div class="container">
             <div class="row d-flex mb-5 contact-info">
                 <div class="w-100"></div>
                 <div class="col-md-4 d-flex">
                     <div class="info bg-white p-4">
-                        <p><span>Address: </span>Udupi, karnataka</p>
+                        <p><span>Address: </span>2D No. 1-2-132D(1), Mahima, Near Kamalabai High School, Kadiyali, Kunjibettu Post - Pin 576102 Udupi, Karnataka, India</p>
                     </div>
                 </div>
                 <div class="col-md-2 d-flex text-center">
@@ -89,39 +156,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row block-9">
-        <div class="col-md-6 order-md-last d-flex">
-          <form action="https://script.google.com/macros/s/AKfycbyWFGbvaLDONB2K1Kyyp-UgWhFihI-0cKSntLi7VA/exec"
-            class="bg-white p-5 contact-form">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-            </div>
-          </form>
-
-        </div> 
-            <div class="col-md- d-flex text-center">
-                <div id="map" class="bg-white">
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4981.840717254059!2d72.13997707863446!3d21.76812452043418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a7fbaf0e2d1%3A0x56f984ef8da53dcb!2sDada%20Saheb%20Sw.%20Jain%20Derasar%20-%20Bhavnagar!5e0!3m2!1sen!2sin!4v1576302477060!5m2!1sen!2sin"
-                        width="1000" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-        </div>
-        </div>
-    -->
     </section>
+
+
     <!-- ------------------------FOOTER STARTS -------------------------------------------------------- -->
 
     <footer class="ftco-footer ftco-section">
@@ -163,22 +200,21 @@
                         <h2 class="ftco-heading-2">Help</h2>
                         <div class="d-flex">
                             <ul>
+                                <li><a href="http://floratrading.net/">Floratrading.net</a></li>
                                 <li><a href="https://apeda.gov.in/apedawebsite/">APEDA</a></li>
-                                <li><a href="https://howtoexportimport.com/Shipping-procedures-to-import-Edible-Fruits-and-nu-950.aspx">Import</a></li>
+                                <li><a href="http://www.indianspices.com/spices-development/spice-catalogue.html">Spice Catalogue</a></li>
                                 <li><a href="https://www.indiamart.com/">India Mart</a></li>
-                                <li><a href="https://www.alibaba.com/">Alibaba</a></li>
-                                <li><a href="http://agriexchange.apeda.gov.in/product_profile/Major_Imporing_Countries.aspx?categorycode=0102">Agri</a></li>
-                                <li><a href="https://www.tradeindia.com/">Trade India</a></li>
+                                <li><a href="http://www.indianspices.com/sites/default/files/spice_growing.pdf">Spice Growing States</a></li>
 
 
                             </ul>
-                            <ul class="pl-6">
-                                <li><a href="https://www.ec21.com/">EC21</a></li>
-                                <li><a href="http://www.infobanc.com/">Infobanc</a></li>
-                                <li><a href="https://en.wikipedia.org/wiki/Mango">Wikipedia</a></li>
-                                <li><a href="https://www.seair.co.in/kesar-mango-export-data.aspx">Seair</a></li>
-                                <li><a href="http://3ienterprise.in">Our Site</a></li>
-                                <li><a href="https://www.quora.com/Can-I-import-a-mango-from-India">Quora</a></li>
+                            <ul class="pl-8">
+                                <li><a href="http://www.indianspices.com/quality/quality-standards/guidelines-quality-improvement.html">Spices Quality</a></li>
+                                <li><a href="https://www.indianspices.com/marketing/import.html">Import Spices</a></li>
+                                <li><a href="https://www.tpci.in/blogs/product-profile-spices/">Trade Promotion Council</a></li>
+                                <li><a href="https://www.indiantradeportal.in/vs.jsp?lang=1&id=0,30,50,180">Indian Trade Portal</a></li>
+
+                                <li><a href="https://www.alibaba.com/showroom/import-indian-spices.html">Import Indian Spices</a></li>
                             </ul>
                         </div>
                     </div>
@@ -189,7 +225,11 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Udupi, karnataka</span></li><br>
+                                <li><span class="icon icon-map-marker"></span><span class="text">2D No. 1-2-132D(1),
+Mahima,
+Near Kamalabai High School,
+Kadiyali, Kunjibettu Post - Pin 576102
+Udupi, Karnataka, India</span></li><br>
                                 <li><a href="tel:+919741923704"><span class="icon icon-phone"></span><span class="text">+91 9741923704
                       </span></a></li>
                                 <li><a href="mailto:sales@floraspices.com"><span class="icon icon-envelope"></span><span
