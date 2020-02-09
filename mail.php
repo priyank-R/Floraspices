@@ -42,7 +42,7 @@ if(isset($_POST['submit_btn']))
                      <div style="padding: 40px; background-color: #333;">
 
                         <div class="button">
-                              <a href="index.html">
+                              <a href="index.php">
                                  <p>Back to Home</p>
                               </a>
                         </div>
@@ -60,7 +60,7 @@ if(isset($_POST['submit_btn']))
                      <div style="padding: 40px; background-color: #333;">
 
                         <div class="button">
-                              <a href="index.html">
+                              <a href="index.php">
                                  <p>Back to Home</p>
                               </a>
                         </div>
